@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sorting-visualizer/bar-chart.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualiser</title>
+    <script type="module" crossorigin src="/sorting-visualizer/assets/index-3phpY0Ov.js"></script>
+    <link rel="stylesheet" crossorigin href="/sorting-visualizer/assets/index-Lgu2UzbM.css">
+  </head>
+  <body>
+    <main>
+      <div class="container controls" data-title="Controls">
+          <input class="values" type="text" placeholder="1,2,3,4,5">
+          <select class="algorithm">
+              <option value="bubble">Bubble</option>
+              <option value="bubble_improved">Bubble (improved)</option>
+              <option value="selection">Selection</option>
+              <option value="selection_improved">Selection (improved)</option>
+              <option value="insertion">Insertion</option>
+              <option value="insertion_improved">Insertion (improved)</option>
+              <option value="max">Max</option>
+              <option value="merge">Mergesort</option>
+              <option value="quick">Quicksort</option>
+              <option value="quick-ext">Quicksort (Bentley-McIlroy)</option>
+          </select>
+          <button class="prev" disabled title="Shortcut: ←/a">Previous</button>
+          <button class="next" disabled title="Shortcut: →/d">Next</button>
+          <button class="reset" title="Shortcut: ↑/w">Start</button>
+      </div>
+      <div class="container renderer" data-title="Visualiser">
+
+      </div>
+      <div class="container algo" data-title="Algorithm"></div>
+      <pre class="container scope" data-title="Scope"></pre>
+    </main>
+  </body>
+</html>
